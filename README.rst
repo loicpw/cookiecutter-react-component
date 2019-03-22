@@ -27,6 +27,29 @@ name is "<package name>", this will create the following structure:
         "main": "<package name>.js"
     }
 
++ component skeleton in <package name>.js 
+
+  .. code-block:: javascript
+
+    import React, { Component } from 'react';
+    import './<PACKAGE NAME>.css';
+    import PropTypes from 'prop-types';
+    import styled from 'styled-components';
+    import theme from 'styled-theming';
+
+    [...]
+    
+    class <COMPONENT NAME> extends Component {
+      render() {
+        return (
+          <div className="<COMPONENT NAME>">
+          </div>
+        );
+      }
+    }
+    
+    
+    export default <COMPONENT NAME>;
 
 Usage
 -----

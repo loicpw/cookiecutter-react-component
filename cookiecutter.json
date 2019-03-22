@@ -1,0 +1,10 @@
+{
+    "author_name": "Loïc Peron",
+    "author_email": "peronloic.us@gmail.com",
+    "author_username": "loicpw",
+    "author_github": "https://github.com/{{ cookiecutter.author_username }}",
+
+    "component_name": "foo",
+    "package_name": "{{ cookiecutter.component_name|lower }}",
+    "component_description": "description of foo"
+}
