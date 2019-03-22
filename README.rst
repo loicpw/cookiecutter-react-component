@@ -27,6 +27,8 @@ name is "<package name>", this will create the following structure:
         "main": "<package name>.js"
     }
 
+  .. note:: this allows to import the component with **import X from './components/X'**
+
 + component skeleton in <package name>.js 
 
   .. code-block:: javascript
