@@ -39,15 +39,20 @@ name is "<package name>", this will create the following structure:
 
     [...]
     
-    class <COMPONENT NAME> extends Component {
+    class _<COMPONENT NAME> extends Component {
       render() {
         return (
-          <div className="<COMPONENT NAME>">
+          <div className={this.props.className}>
+            {this.props.children}
           </div>
         );
       }
     }
     
+
+    const <COMPONENT NAME> = styled(_<COMPONENT NAME>)`
+        background-color: #A0A0A0;
+    `;
     
     export default <COMPONENT NAME>;
 
