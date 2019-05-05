@@ -93,7 +93,7 @@ class _{{cookiecutter.component_name}} extends Component {
     /**
      * @constructs {{cookiecutter.component_name}}
      */
-    constructor() {
+    constructor(props) {
         super(props);
     }
 

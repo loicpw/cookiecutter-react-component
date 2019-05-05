@@ -24,12 +24,16 @@ name is "<package name>", this will create the following structure:
 + package.json ::
 
     {
-        "main": "<package name>.js"
+        "main": "[package name].js"
+        "author": "[author name] <[author email]> ([author github])",
+        "version": "1.0.0",
+        "name": "[component name]",
+        "description": "[component description]"
     }
 
   .. note:: this allows to import the component with **import X from './components/X'**
 
-+ component skeleton in <package name>.js 
++ component skeleton in <package name>.js (overview)
 
   .. code-block:: javascript
 
@@ -42,6 +46,10 @@ name is "<package name>", this will create the following structure:
     [...]
     
     class _<COMPONENT NAME> extends Component {
+      constructor(props) {
+        super(props);
+      }
+
       render() {
         return (
           <div className={this.props.className}>
@@ -51,9 +59,13 @@ name is "<package name>", this will create the following structure:
       }
     }
     
+    _<COMPONENT NAME>.propTypes = {
+    };
+    
+    _<COMPONENT NAME>.defaultProps = {
+    };
 
     const <COMPONENT NAME> = styled(_<COMPONENT NAME>)`
-        background-color: #A0A0A0;
     `;
     
     export default <COMPONENT NAME>;
