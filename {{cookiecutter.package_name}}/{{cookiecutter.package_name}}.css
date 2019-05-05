@@ -1,10 +1,6 @@
-/* ---------------------------------------------------------------------
- === CSS for "{{cookiecutter.component_name}}" ===
-
- author:       {{cookiecutter.author_name}}
- email:        {{cookiecutter.author_email}}
- github:       {{cookiecutter.author_github}}
-
- component:    {{cookiecutter.component_name}}
- description:  {{cookiecutter.component_description}}
-----------------------------------------------------------------------*/
+/**
+* CSS for "{{cookiecutter.component_name}}"
+*
+* component:    {{cookiecutter.component_name}}
+* description:  {{cookiecutter.component_description}}
+*/

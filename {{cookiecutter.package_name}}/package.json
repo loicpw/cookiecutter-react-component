@@ -1,3 +1,7 @@
 {
-    "main": "{{cookiecutter.package_name}}.js"
+    "main": "{{cookiecutter.package_name}}.js",
+    "author": "{{cookiecutter.author_name}} <{{cookiecutter.author_email}}> ({{cookiecutter.author_github}})",
+    "version": "1.0.0",
+    "name": "{{cookiecutter.component_name}}",
+    "description": "{{cookiecutter.component_description}}"
 }
